@@ -40,3 +40,53 @@
 .workout-meta small {
   color: #666;
 }
+
+.scores-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.scores-section h4 {
+  color: #cccccc;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.scores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: #444;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.score-date {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.loading {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+.no-scores {
+  color: #999;
+  margin: 0;
+  font-style: italic;
+}
