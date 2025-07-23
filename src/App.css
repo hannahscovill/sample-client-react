@@ -47,10 +47,31 @@
   border-top: 1px solid #eee;
 }
 
+.scores-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
 .scores-section h4 {
   color: #cccccc;
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   font-size: 1.1rem;
+}
+
+.add-score-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.add-score-btn:hover {
+  background-color: #45a049;
 }
 
 .scores-list {
@@ -89,4 +110,76 @@
   color: #999;
   margin: 0;
   font-style: italic;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #313131;
+  border-radius: 8px;
+  padding: 2rem;
+  min-width: 400px;
+  max-width: 90vw;
+  border: 1px solid #ddd;
+}
+
+.modal h3 {
+  margin-top: 0;
+  color: #cccccc;
+  margin-bottom: 1rem;
+}
+
+.score-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
 }
